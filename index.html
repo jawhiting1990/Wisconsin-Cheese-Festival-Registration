@@ -48,47 +48,69 @@
 
         <p>Please fill out the form below to register for the Wisconsin Cheese Festival.</p>
 
-        <p>
+        <fieldset><!--I looked up the double break thing, didn't know I could do that, now I do :D -->
         <!--Input type 1 (text)-->
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Your name here" required>
-        </p>
+        <legend>Personal Information</legend>
         
-        <p>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your name here" required><br><br>
+       
         <!--Input type 2 (date)-->
         <label for="DOB">Date of Birth:</label>
-        <input type="date" id="DOB" name="DOB" required>
-        </p>
-        
-        <p>
+        <input type="date" id="DOB" name="DOB" required><br><br>
+       
         <!--Input type 3 (tel)-->
         <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone1" name="phone1" placeholder="(000)-000-0000" required>
-        </p>
-        
-        <p>
+        <input type="tel" id="phone1" name="phone1" placeholder="(000)-000-0000" required><br>
+      
         <!--Checkboxes for phone choice (radio)-->
         <label for="home">Home</label>
         <input type="radio" id="home" name="type">
         <label for="work">Work</label>
         <input type="radio" id="work" name="type">
         <label for="mobile">Cell</label>
-        <input type="radio" id="mobile" name="type">
-        </p>
-        
-        <p>
+        <input type="radio" id="mobile" name="type"><br><br>
+      
         <!--Input type 4 (email)-->
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="YourEmail@Internet.com" required>
-        </p>
+        <input type="email" id="email" name="email" placeholder="YourEmail@Internet.com" required><br>
+        </fieldset>
 
+        <fieldset>
+        <legend>Attendance Information</legend>
+        <!--Checkboxes-->
+        <label for="days">Day(s) Attending:</label>
+        <input type="checkbox" id="fri" name="days">
+        <label for="fri">Friday</label>
+        <input type="checkbox" id="sat" name="days">
+        <label for="sat">Saturday</label>
+        <input type="checkbox" id="sun" name="days">
+        <label for="sun">Sunday</label><br><br>
+        
+        <label for="time">Time(s):</label>
+        <input type="checkbox" id="morn" name="time">
+        <label for="morn">Morning</label>
+        <input type="checkbox" id="noon" name="time">
+        <label for="noon">Noon</label>
+        <input type="checkbox" id="aft" name="time">
+        <label for="aft">Afternoon</label>
+        <input type="checkbox" id="eve" name="time">
+        <label for="eve">Evening</label>
+        </fieldset>
 
-<!--3 input types-->
-        <!--text for name-->
-        <!--tel for phone-->
-        <!--email for email-->
-    <!--Radio button group in fieldset and legend-->
-    <!--dropdown using optgroup (cheese preference, mild, sharp, specialty, etc.)-->
+        <fieldset>
+    
+
+        </fieldset>
+    
+    
+    
+    
+    
+    
+    
+    
+        <!--dropdown using optgroup (cheese preference, mild, sharp, specialty, etc.)-->
     <!--textarea for dietary restrictions-->
     <!--All required and placeholder used right and visible labels on everything-->
         
