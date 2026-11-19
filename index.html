@@ -45,7 +45,7 @@
         <section id="Main">
             <h2>Wisconsin Cheese Festival Registration</h2>
         </section>
-
+<form>
         <p>Please fill out the form below to register for the Wisconsin Cheese Festival.</p>
 
         <fieldset><!--I looked up the double break thing, didn't know I could do that, now I do :D -->
@@ -61,15 +61,15 @@
 
             <!--Input type 3 (tel)-->
             <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone1" name="phone1" placeholder="(000)-000-0000" required><br>
+            <input type="tel" id="phone" name="phone" placeholder="(000)-000-0000" required><br>
 
             <!--Checkboxes for phone choice (radio)-->
             <label for="home">Home</label>
-            <input type="radio" id="home" name="type">
+            <input type="radio" id="home" name="type" value="home">
             <label for="work">Work</label>
-            <input type="radio" id="work" name="type">
+            <input type="radio" id="work" name="type" value="home">
             <label for="mobile">Cell</label>
-            <input type="radio" id="mobile" name="type"><br><br>
+            <input type="radio" id="mobile" name="type" value="home"><br><br>
 
             <!--Input type 4 (email)-->
             <label for="email">Email:</label>
@@ -79,15 +79,15 @@
         <fieldset>
             <legend>Attendance Information</legend>
             <!--Checkboxes-->
-            <label for="days">Day(s) Attending:</label>
+            <p>Day(s) Attending:
             <input type="checkbox" id="fri" name="days">
             <label for="fri">Friday</label>
             <input type="checkbox" id="sat" name="days">
             <label for="sat">Saturday</label>
             <input type="checkbox" id="sun" name="days">
-            <label for="sun">Sunday</label><br><br>
+            <label for="sun">Sunday</label></p>
 
-            <label for="time">Time(s):</label>
+            <p>Time(s):
             <input type="checkbox" id="morn" name="time">
             <label for="morn">Morning</label>
             <input type="checkbox" id="noon" name="time">
@@ -95,14 +95,14 @@
             <input type="checkbox" id="aft" name="time">
             <label for="aft">Afternoon</label>
             <input type="checkbox" id="eve" name="time">
-            <label for="eve">Evening</label><br>
+            <label for="eve">Evening</label></p><br>
         </fieldset><br>
 
         <fieldset>
             <legend>Cheese Preferences</legend>
             <!--Dropdown menu using optgroup-->
             <label for="fav">My favorite cheese is...</label>
-            <select name="fav">
+            <select name="fav" id="fav">
                 <option value="select">---Select---</option>
                 <optgroup label="Soft">
                     <option value="brie">Brie</option>
@@ -138,7 +138,7 @@
             </select><br><br>
 
             <label for="least">My least favorite is...</label>
-            <select name="least">
+            <select name="least" id="least">
                 <option value="select">---Select---</option>
                 <optgroup label="Soft">
                     <option value="brie">Brie</option>
@@ -262,20 +262,19 @@
                         </td>
                     </tr>
                     <tr>
-
-
                         <td><input type="checkbox" id="romano" name="cheese">
                             <label for="romano">Pecorino Romano</label>
                         </td>
                     </tr>
                 </tbody>
             </table><br><br>
+
             <!--textarea box-->
             <label for="restrictions">Dietary Restrictions (type N/A if no restrictions):</label><br>
             <textarea id="restrictions" name="restrictions" rows="10" cols="50" placeholder="Dietary Restrictions" required></textarea>
         </fieldset>
 
-
+</form>
         <!--All required and placeholder used right and visible labels on everything-->
 
         <footer id="Contact">
