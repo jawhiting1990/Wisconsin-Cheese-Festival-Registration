@@ -45,236 +45,240 @@
         <section id="Main">
             <h2>Wisconsin Cheese Festival Registration</h2>
         </section>
-<form>
-        <p>Please fill out the form below to register for the Wisconsin Cheese Festival.</p>
+        <form>
+            <p>Please fill out the form below to register for the Wisconsin Cheese Festival.</p>
 
-        <fieldset><!--I looked up the double break thing, didn't know I could do that, now I do :D -->
-            <!--Input type 1 (text)-->
-            <legend>Personal Information</legend>
+            <fieldset><!--I looked up the double break thing, didn't know I could do that, now I do :D -->
+                <!--Input type 1 (text)-->
+                <legend>Personal Information</legend>
 
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Your name here" required><br><br>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your name here" required><br><br>
 
-            <!--Input type 2 (date)-->
-            <label for="DOB">Date of Birth:</label>
-            <input type="date" id="DOB" name="DOB" required><br><br>
+                <!--Input type 2 (date)-->
+                <label for="DOB">Date of Birth:</label>
+                <input type="date" id="DOB" name="DOB" required><br><br>
 
-            <!--Input type 3 (tel)-->
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" placeholder="(000)-000-0000" required><br>
+                <!--Input type 3 (tel)-->
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="(000)-000-0000" required><br>
 
-            <!--Checkboxes for phone choice (radio)-->
-            <label for="home">Home</label>
-            <input type="radio" id="home" name="type" value="home">
-            <label for="work">Work</label>
-            <input type="radio" id="work" name="type" value="home">
-            <label for="mobile">Cell</label>
-            <input type="radio" id="mobile" name="type" value="home"><br><br>
+                <!--Checkboxes for phone choice (radio)-->
+                <input type="radio" id="home" name="type" value="home">
+                <label for="home">Home</label>
+                <input type="radio" id="work" name="type" value="home">
+                <label for="work">Work</label>
 
-            <!--Input type 4 (email)-->
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="YourEmail@Internet.com" required><br>
-        </fieldset><br>
+                <input type="radio" id="mobile" name="type" value="home">
+                <label for="mobile">Cell</label><br><br>
 
-        <fieldset>
-            <legend>Attendance Information</legend>
-            <!--Checkboxes-->
-            <p>Day(s) Attending:
-            <input type="checkbox" id="fri" name="days">
-            <label for="fri">Friday</label>
-            <input type="checkbox" id="sat" name="days">
-            <label for="sat">Saturday</label>
-            <input type="checkbox" id="sun" name="days">
-            <label for="sun">Sunday</label></p>
+                <!--Input type 4 (email)-->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="YourEmail@Internet.com" required><br>
+            </fieldset><br>
 
-            <p>Time(s):
-            <input type="checkbox" id="morn" name="time">
-            <label for="morn">Morning</label>
-            <input type="checkbox" id="noon" name="time">
-            <label for="noon">Noon</label>
-            <input type="checkbox" id="aft" name="time">
-            <label for="aft">Afternoon</label>
-            <input type="checkbox" id="eve" name="time">
-            <label for="eve">Evening</label></p><br>
-        </fieldset><br>
+            <fieldset>
+                <legend>Attendance Information</legend>
+                <!--Checkboxes-->
+                <p>Day(s) Attending:
+                    <input type="checkbox" id="fri" name="days">
+                    <label for="fri">Friday</label>
+                    <input type="checkbox" id="sat" name="days">
+                    <label for="sat">Saturday</label>
+                    <input type="checkbox" id="sun" name="days">
+                    <label for="sun">Sunday</label>
+                </p>
 
-        <fieldset>
-            <legend>Cheese Preferences</legend>
-            <!--Dropdown menu using optgroup-->
-            <label for="fav">My favorite cheese is...</label>
-            <select name="fav" id="fav">
-                <option value="select">---Select---</option>
-                <optgroup label="Soft">
-                    <option value="brie">Brie</option>
-                    <option value="camembert">Camembert</option>
-                    <option value="ricotta">Ricotta</option>
-                    <option value="mascarpone">Mascarpone</option>
-                    <option value="creamcheese">Cream cheese</option>
-                    <option value="goatcheese">Goat cheese</option>
-                </optgroup>
-                <optgroup label="Semi-Soft">
-                    <option value="havarti">Havarti</option>
-                    <option value="muenster">Muenster</option>
-                    <option value="montereyjack">Monterey Jack</option>
-                    <option value="mozzarella">Mozzarella</option>
-                </optgroup>
-                <optgroup label="Semi-Hard">
-                    <option value="freshcheddar">Fresh Cheddar</option>
-                    <option value="gruyere">Gruyère</option>
-                    <option value="swisscheese">Swiss Cheese</option>
-                    <option value="colby">Colby</option>
-                    <option value="provolone">Provolone</option>
-                </optgroup>
-                <optgroup label="Hard">
-                    <option value="agedcheddar">Aged Cheddar</option>
-                    <option value="gouda">Gouda</option>
-                    <option value="asiago">Asiago</option>
-                    <option value="manchego">Manchego</option>
-                </optgroup>
-                <optgroup label="Very Hard">
-                    <option value="parmesan">Parmigiano Reggiano</option>
-                    <option value="romano">Pecorino Romano</option>
-                </optgroup>
-            </select><br><br>
+                <p>Time(s):
+                    <input type="checkbox" id="morn" name="time">
+                    <label for="morn">Morning</label>
+                    <input type="checkbox" id="noon" name="time">
+                    <label for="noon">Noon</label>
+                    <input type="checkbox" id="aft" name="time">
+                    <label for="aft">Afternoon</label>
+                    <input type="checkbox" id="eve" name="time">
+                    <label for="eve">Evening</label>
+                </p><br>
+            </fieldset><br>
 
-            <label for="least">My least favorite is...</label>
-            <select name="least" id="least">
-                <option value="select">---Select---</option>
-                <optgroup label="Soft">
-                    <option value="brie">Brie</option>
-                    <option value="camembert">Camembert</option>
-                    <option value="ricotta">Ricotta</option>
-                    <option value="mascarpone">Mascarpone</option>
-                    <option value="creamcheese">Cream cheese</option>
-                    <option value="goatcheese">Goat cheese</option>
-                </optgroup>
-                <optgroup label="Semi-Soft">
-                    <option value="havarti">Havarti</option>
-                    <option value="muenster">Muenster</option>
-                    <option value="montereyjack">Monterey Jack</option>
-                    <option value="mozzarella">Mozzarella</option>
-                </optgroup>
-                <optgroup label="Semi-Hard">
-                    <option value="freshcheddar">Fresh Cheddar</option>
-                    <option value="gruyere">Gruyère</option>
-                    <option value="swisscheese">Swiss Cheese</option>
-                    <option value="colby">Colby</option>
-                    <option value="provolone">Provolone</option>
-                </optgroup>
-                <optgroup label="Hard">
-                    <option value="agedcheddar">Aged Cheddar</option>
-                    <option value="gouda">Gouda</option>
-                    <option value="asiago">Asiago</option>
-                    <option value="manchego">Manchego</option>
-                </optgroup>
-                <optgroup label="Very Hard">
-                    <option value="parmesan">Parmigiano Reggiano</option>
-                    <option value="romano">Pecorino Romano</option>
-                </optgroup>
-            </select><br><br>
+            <fieldset>
+                <legend>Cheese Preferences</legend>
+                <!--Dropdown menu using optgroup-->
+                <label for="fav">My favorite cheese is...</label>
+                <select name="fav" id="fav">
+                    <option value="select">---Select---</option>
+                    <optgroup label="Soft">
+                        <option value="brie">Brie</option>
+                        <option value="camembert">Camembert</option>
+                        <option value="ricotta">Ricotta</option>
+                        <option value="mascarpone">Mascarpone</option>
+                        <option value="creamcheese">Cream cheese</option>
+                        <option value="goatcheese">Goat cheese</option>
+                    </optgroup>
+                    <optgroup label="Semi-Soft">
+                        <option value="havarti">Havarti</option>
+                        <option value="muenster">Muenster</option>
+                        <option value="montereyjack">Monterey Jack</option>
+                        <option value="mozzarella">Mozzarella</option>
+                    </optgroup>
+                    <optgroup label="Semi-Hard">
+                        <option value="freshcheddar">Fresh Cheddar</option>
+                        <option value="gruyere">Gruyère</option>
+                        <option value="swisscheese">Swiss Cheese</option>
+                        <option value="colby">Colby</option>
+                        <option value="provolone">Provolone</option>
+                    </optgroup>
+                    <optgroup label="Hard">
+                        <option value="agedcheddar">Aged Cheddar</option>
+                        <option value="gouda">Gouda</option>
+                        <option value="asiago">Asiago</option>
+                        <option value="manchego">Manchego</option>
+                    </optgroup>
+                    <optgroup label="Very Hard">
+                        <option value="parmesan">Parmigiano Reggiano</option>
+                        <option value="romano">Pecorino Romano</option>
+                    </optgroup>
+                </select><br><br>
 
-            <p>I want to try...</p>
-            <table>
-                <tbody>
-                    <tr>
-                        <td><input type="checkbox" id="brie" name="cheese">
-                            <label for="brie">Brie</label>
-                        </td>
+                <label for="least">My least favorite is...</label>
+                <select name="least" id="least">
+                    <option value="select">---Select---</option>
+                    <optgroup label="Soft">
+                        <option value="brie">Brie</option>
+                        <option value="camembert">Camembert</option>
+                        <option value="ricotta">Ricotta</option>
+                        <option value="mascarpone">Mascarpone</option>
+                        <option value="creamcheese">Cream cheese</option>
+                        <option value="goatcheese">Goat cheese</option>
+                    </optgroup>
+                    <optgroup label="Semi-Soft">
+                        <option value="havarti">Havarti</option>
+                        <option value="muenster">Muenster</option>
+                        <option value="montereyjack">Monterey Jack</option>
+                        <option value="mozzarella">Mozzarella</option>
+                    </optgroup>
+                    <optgroup label="Semi-Hard">
+                        <option value="freshcheddar">Fresh Cheddar</option>
+                        <option value="gruyere">Gruyère</option>
+                        <option value="swisscheese">Swiss Cheese</option>
+                        <option value="colby">Colby</option>
+                        <option value="provolone">Provolone</option>
+                    </optgroup>
+                    <optgroup label="Hard">
+                        <option value="agedcheddar">Aged Cheddar</option>
+                        <option value="gouda">Gouda</option>
+                        <option value="asiago">Asiago</option>
+                        <option value="manchego">Manchego</option>
+                    </optgroup>
+                    <optgroup label="Very Hard">
+                        <option value="parmesan">Parmigiano Reggiano</option>
+                        <option value="romano">Pecorino Romano</option>
+                    </optgroup>
+                </select><br><br>
 
-                        <td><input type="checkbox" id="camembert" name="cheese">
-                            <label for="camembert">Camembert</label>
-                        </td>
+                <p>I want to try...</p>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox" id="brie" name="cheese">
+                                <label for="brie">Brie</label>
+                            </td>
 
-                        <td><input type="checkbox" id="ricotta" name="cheese">
-                            <label for="ricotta">Ricotta</label>
-                        </td>
+                            <td><input type="checkbox" id="camembert" name="cheese">
+                                <label for="camembert">Camembert</label>
+                            </td>
 
-                        <td><input type="checkbox" id="mascarpone" name="cheese">
-                            <label for="mascarpone">Mascarpone</label>
-                        </td>
+                            <td><input type="checkbox" id="ricotta" name="cheese">
+                                <label for="ricotta">Ricotta</label>
+                            </td>
 
-                        <td><input type="checkbox" id="creamcheese" name="cheese">
-                            <label for="creamcheese">Cream Cheese</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox" id="goatcheese" name="cheese">
-                            <label for="goatcheese">Goat Cheese</label>
-                        </td>
+                            <td><input type="checkbox" id="mascarpone" name="cheese">
+                                <label for="mascarpone">Mascarpone</label>
+                            </td>
 
-                        <td><input type="checkbox" id="havarti" name="cheese">
-                            <label for="havarti">Havarti</label>
-                        </td>
+                            <td><input type="checkbox" id="creamcheese" name="cheese">
+                                <label for="creamcheese">Cream Cheese</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="goatcheese" name="cheese">
+                                <label for="goatcheese">Goat Cheese</label>
+                            </td>
 
-                        <td><input type="checkbox" id="muenster" name="cheese">
-                            <label for="muenster">Muenster</label>
-                        </td>
+                            <td><input type="checkbox" id="havarti" name="cheese">
+                                <label for="havarti">Havarti</label>
+                            </td>
 
-                        <td><input type="checkbox" id="montereyjack" name="cheese">
-                            <label for="montereyjack">Monterey Jack</label>
-                        </td>
+                            <td><input type="checkbox" id="muenster" name="cheese">
+                                <label for="muenster">Muenster</label>
+                            </td>
 
-                        <td><input type="checkbox" id="mozzarella" name="cheese">
-                            <label for="mozzarella">Mozzarella</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox" id="freshcheddar" name="cheese">
-                            <label for="freshcheddar">Fresh Cheddar</label>
-                        </td>
+                            <td><input type="checkbox" id="montereyjack" name="cheese">
+                                <label for="montereyjack">Monterey Jack</label>
+                            </td>
 
-                        <td><input type="checkbox" id="gruyere" name="cheese">
-                            <label for="gruyere">Gruyère</label>
-                        </td>
+                            <td><input type="checkbox" id="mozzarella" name="cheese">
+                                <label for="mozzarella">Mozzarella</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="freshcheddar" name="cheese">
+                                <label for="freshcheddar">Fresh Cheddar</label>
+                            </td>
 
-                        <td><input type="checkbox" id="swisscheese" name="cheese">
-                            <label for="swisscheese">Swiss Cheese</label>
-                        </td>
+                            <td><input type="checkbox" id="gruyere" name="cheese">
+                                <label for="gruyere">Gruyère</label>
+                            </td>
 
-                        <td><input type="checkbox" id="colby" name="cheese">
-                            <label for="colby">Colby</label>
-                        </td>
+                            <td><input type="checkbox" id="swisscheese" name="cheese">
+                                <label for="swisscheese">Swiss Cheese</label>
+                            </td>
+
+                            <td><input type="checkbox" id="colby" name="cheese">
+                                <label for="colby">Colby</label>
+                            </td>
 
 
-                        <td><input type="checkbox" id="provolone" name="cheese">
-                            <label for="provolone">Provolone</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox" id="agedcheddar" name="cheese">
-                            <label for="agedcheddar">Aged Cheddar</label>
-                        </td>
+                            <td><input type="checkbox" id="provolone" name="cheese">
+                                <label for="provolone">Provolone</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="agedcheddar" name="cheese">
+                                <label for="agedcheddar">Aged Cheddar</label>
+                            </td>
 
-                        <td><input type="checkbox" id="gouda" name="cheese">
-                            <label for="gouda">Gouda</label>
-                        </td>
+                            <td><input type="checkbox" id="gouda" name="cheese">
+                                <label for="gouda">Gouda</label>
+                            </td>
 
-                        <td><input type="checkbox" id="asiago" name="cheese">
-                            <label for="asiago">Asiago</label>
-                        </td>
+                            <td><input type="checkbox" id="asiago" name="cheese">
+                                <label for="asiago">Asiago</label>
+                            </td>
 
-                        <td><input type="checkbox" id="manchego" name="cheese">
-                            <label for="manchego">Manchego</label>
-                        </td>
+                            <td><input type="checkbox" id="manchego" name="cheese">
+                                <label for="manchego">Manchego</label>
+                            </td>
 
-                        <td><input type="checkbox" id="parmesan" name="cheese">
-                            <label for="parmesan">Parmigiano Reggiano</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox" id="romano" name="cheese">
-                            <label for="romano">Pecorino Romano</label>
-                        </td>
-                    </tr>
-                </tbody>
-            </table><br><br>
+                            <td><input type="checkbox" id="parmesan" name="cheese">
+                                <label for="parmesan">Parmigiano Reggiano</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="romano" name="cheese">
+                                <label for="romano">Pecorino Romano</label>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table><br><br>
 
-            <!--textarea box-->
-            <label for="restrictions">Dietary Restrictions (type N/A if no restrictions):</label><br>
-            <textarea id="restrictions" name="restrictions" rows="10" cols="50" placeholder="Dietary Restrictions" required></textarea>
-        </fieldset>
+                <!--textarea box-->
+                <label for="restrictions">Dietary Restrictions (type N/A if no restrictions):</label><br>
+                <textarea id="restrictions" name="restrictions" rows="10" cols="50" placeholder="Dietary Restrictions"
+                    required></textarea>
+            </fieldset>
 
-</form>
+        </form>
         <!--All required and placeholder used right and visible labels on everything-->
 
         <footer id="Contact">
