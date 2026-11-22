@@ -9,3 +9,107 @@
 /*Flexbox applied to the navigation <ul>*/
 /*A container class with max-width, margin: 0 auto, and padding, applied to the page's main content wrapper*/
 
+/*===== General =====*/
+* {
+    box-sizing: border-box;
+}
+
+
+/*===== Body =====*/
+
+body {
+/*Figured out how to do this by using Google, wasn't 100% sure how to link the font I wanted to the code*/
+    font-family: "Schoolbell";
+    font-weight: 400;
+    font-style: normal;
+    /*End of font code*/
+    background-color: #16121E; /*Aubergine*/
+    color: #F4F0FA; /*Lilac White*/
+}
+
+/*===== Header =====*/
+h1 {
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 5px;   
+}
+
+/*===== Navigation and Links =====*/
+nav ul {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    list-style: none;
+    gap: 30px;
+    margin-top: 0;
+}
+
+a:link {
+    color:#7CC4FA; /*Luminous Sky Blue*/
+}
+
+a:visited {
+    color: #D6BCFA; /*Soft Lavender*/
+}
+
+a:hover, a:focus-visible {
+    color: #BAE0FF; /*Ice Blue*/
+}
+
+.cheese-links {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    list-style: none;
+    gap: 20px; 
+
+}
+
+.cheese-links p {
+    margin: 0;
+}
+
+/*===== Image =====*/
+nav img {
+    display: block;
+    margin: 0 auto;
+    border: 12px ridge #F4F0FA; /*Lilac White*/
+    border-radius: 8px;
+    padding: 15px;
+}
+
+/*===== Main =====*/
+h2 {
+    text-align: center;
+    font-size: 2.25rem;
+    margin: 5px;
+}
+
+#please-text p {
+    text-align: center;
+    margin: 0px;
+}
+
+/*===== Form =====*/
+.information {
+    display: flex;
+    gap: 20px;
+}
+
+.information fieldset {
+    flex: 1;
+    min-width: 0;
+    border: 3px ridge #F4F0FA; /*Lilac White*/
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.information legend {
+    font-size: 1.5rem;
+    padding: 0 8px;
+}
+
+
+/*===== Footer =====*/
