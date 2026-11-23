@@ -32,23 +32,23 @@
             <img src="https://dfwblobstorage.blob.core.windows.net/ewcmediacontainer/eatwisconsincheese/media/content/blog-content/GPS-spring24-world-ch-cheese-championship-900x600.jpg"
                 alt="A large variety of cheese wheels and slices in a pile on a table" height="300" width="500"><br>
         </section>
-        <div class="cheese-links"><!--Modified to list for CSS-->
+        <ul class="cheese-links"><!--Modified to list for CSS-->
             <li><a href="https://en.wikipedia.org/wiki/Cheese">What is cheese?</a></li>
             <li><a href="https://en.wikipedia.org/wiki/History_of_cheese">History of cheese</a></li>
             <li><a href="https://en.wikipedia.org/wiki/Types_of_cheese">Varieties of cheese</a></li>
-            <li><a href="https://en.wikipedia.org/wiki/Wisconsin_cheese">Wisconsin cheese production</a></li><br><br>
-            </ul>
+            <li><a href="https://en.wikipedia.org/wiki/Wisconsin_cheese">Wisconsin cheese production</a></li><br>
+        </ul>
     </nav>
 
-    <main>
+    <main class="container">
 
         <section id="main">
             <h2>Wisconsin Cheese Festival Registration</h2>
         </section>
 
         <section id="please-text"><!--Added for CSS-->
-            <p>Please fill out the form below to register for the Wisconsin Cheese Festival.</p></section><br>
-        </section>
+            <p>Please fill out the form below to register for the Wisconsin Cheese Festival.</p>
+        </section><br>
 
         <form>
             
@@ -101,7 +101,7 @@
                 </fieldset>
             </div>
             
-            <div class="form-pref">
+            <div class="preferences">
                 <fieldset>
                     <legend>Cheese Preferences</legend>
                     <label for="fav">My favorite cheese is...</label>
@@ -139,7 +139,7 @@
                             <option value="romano">Pecorino Romano</option>
                         </optgroup>
                     </select><br><br>
-
+                    
                     <label for="least">My least favorite is...</label>
                     <select name="least" id="least">
                         <option value="select">---Select---</option>
@@ -275,13 +275,13 @@
                     <label for="restrictions">Dietary Restrictions (type N/A if no restrictions):</label><br>
                     <textarea id="restrictions" name="restrictions" rows="10" cols="50"
                         placeholder="Dietary Restrictions" required></textarea>
-                </fieldset>
+                </fieldset><br>
             
             </div>
             
-            <fieldset>
+            <div class="submitbutton">
                 <button>Submit</button>
-            </fieldset>
+            </div><br><br>
         </form>
 
         <footer id="contact">
